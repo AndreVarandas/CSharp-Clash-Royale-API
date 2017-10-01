@@ -79,6 +79,12 @@ foreach (Card card in cards)
 List<Card> randomDeck = RoyaleAPI.GetRandomDeck();
 ```
 
+#### TODO
+- Better error handling.
+- Improve documentation.
+- Publish package.
+- General refactor.
+
 
 #### License
 [MIT - André Varandas](LICENSE)
