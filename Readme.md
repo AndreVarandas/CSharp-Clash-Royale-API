@@ -1,4 +1,4 @@
-# Clash Royale Api
+ï»¿# Clash Royale Api
 
 This is a simple wrapper for the awesome NodeJS Clash Royale api made by [Martin Carrera](https://github.com/martincarrera/clash-royale-api).
 
@@ -96,7 +96,7 @@ List<Card> randomDeck = RoyaleAPI.GetRandomDeck();
 
 
 #### License
-[MIT - André Varandas](LICENSE)
+[MIT - Andrï¿½ Varandas](LICENSE)
 
 #### Important Notice
-This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see Supercell’s Fan Content Policy: [www.supercell.com/fan-content-policy](www.supercell.com/fan-content-policy).
+This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see Supercellï¿½s Fan Content Policy: [www.supercell.com/fan-content-policy](www.supercell.com/fan-content-policy).
