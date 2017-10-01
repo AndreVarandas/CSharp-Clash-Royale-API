@@ -1,42 +1,87 @@
 # Clash Royale Api
 
-This is a wrapper for the awesome NodeJS API made by [Martin Carrera](https://github.com/martincarrera/clash-royale-api).
+This is a simple wrapper for the awesome NodeJS Clash Royale api made by [Martin Carrera](https://github.com/martincarrera/clash-royale-api).
+
+#### Motivation
+The need to use this library in any dotnet core application.
 
 #### Usage
-Include library in your project
 
-- Get an istance of the RoyaleAPI object.
+**Available models**:
 
-*Available methods:*
+`Arena`
+`Card`
+`Chest`
+`League`
+`Player`
 
-`RoyaleAPI.GetCards()` // Returns all cards
+**Available methods:**
 
-`RoyaleAPI.GetCard(id)` // Returns a single card
+```csharp
+// Required namespace
+using ClashRoyaleApi
 
-`RoyaleAPI.GetCardImage(id)` // Returns the card image
+// Returns all cards
+RoyaleAPI.GetCards();
 
-`RoyaleAPI.GetArenas()` // Returns all arenas
+// Returns a single card
+RoyaleAPI.GetCard(id); 
 
-`RoyaleAPI.GetArena(id)` // Returns a single arena
+// Returns the card image url
+RoyaleAPI.GetCardImageURL(idName) ;
 
-`RoyaleAPI.GetArenaImage(id)` // Returns the arena image
+// Returns all arenas
+RoyaleAPI.GetArenas();
 
-`RoyaleAPI.GetChests()` // Returns all chests
+// Returns a single arena
+RoyaleAPI.GetArena(id); 
 
-`RoyaleAPI.GetChest(id)` // Returns a single chest
+// Returns the arena image url
+RoyaleAPI.GetArenaImageURL(idName);
 
-`RoyaleAPI.GetChest(id)` // Returns the chest image
+// Returns all chests
+RoyaleAPI.GetChests();
 
-`RoyaleAPI.GetLeagues()` // Returns all leagues
+// Returns a single chest
+RoyaleAPI.GetChest(id);
 
-`RoyaleAPI.GetLeague(id)` // Returns a single league
+// Returns the chest image url
+RoyaleAPI.GetChestURL(idName);
 
-`RoyaleAPI.GetLeague(id)` // Returns the league image
+// Returns all leagues
+RoyaleAPI.GetLeagues();
 
-`RoyaleAPI.GetPlayers()` // Returns all info about players
+// Returns a single league
+RoyaleAPI.GetLeague(id);
 
-`RoyaleAPI.GetPlayer(id)` // Returns info about a single player level
+// Returns the league image
+RoyaleAPI.GetLeagueImageURL(idName);
 
-`RoyaleAPI.GetRandomDeck()` // Returns a random deck
+// Returns all info about players
+RoyaleAPI.GetPlayers();
+
+// Returns info about a single player level
+RoyaleAPI.GetPlayer(id);
+
+// Returns a random deck
+RoyaleAPI.GetRandomDeck();
+
+// EXAMPLES
+
+// Getting all the cards
+List<Card> cards = RoyaleAPI.GetCards();
+foreach (Card card in cards)
+{
+    Console.WriteLine(card.Name);
+}
+
+// Getting a random deck
+List<Card> randomDeck = RoyaleAPI.GetRandomDeck();
+```
 
 
+#### License
+[MIT - André Varandas](LICENSE)
+
+#### Important Notice
+This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see Supercell’s Fan Content Policy: [www.supercell.com/fan-content-policy](www.supercell.com/fan-content-policy).

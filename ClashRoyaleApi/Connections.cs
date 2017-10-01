@@ -5,15 +5,30 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ClashRoyaleApi
-{
+{   
+    /// <summary>
+    /// Manages http requests
+    /// </summary>
     public class Connections
     {
+        /// <summary>
+        /// Returns a JSON response for the url
+        /// </summary>
+        /// <param name="url">Url to search for</param>
+        /// <returns>JSON</returns>
         public static async Task<string> GetURL(string url)
         {
             using (var httpClient = new HttpClient())
             {
-                var json = await httpClient.GetStringAsync(url); // json
-                return json;
+                try
+                {
+                    var result = await httpClient.GetStringAsync(url);
+                    return result.ToString();
+                }
+                catch (Exception ex)
+                {
+                    return ex.Message;
+                }
             }
         }
     }
