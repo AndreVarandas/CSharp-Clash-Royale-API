@@ -7,6 +7,15 @@ The need to use this library in any dotnet core application.
 
 #### Usage
 
+Install with one:
+
+- *Package Manager*:
+  - `PM> Install-Package ClashRoyaleApi -Version 1.0.0`
+- *.NET Cli*: 
+  - `$ dotnet add package ClashRoyaleApi --version 1.0.0`
+- *Packet CLI*: 
+  - `$ paket add ClashRoyaleApi --version 1.0.0`
+
 **Available models**:
 
 `Arena`
@@ -82,8 +91,8 @@ List<Card> randomDeck = RoyaleAPI.GetRandomDeck();
 #### TODO
 - Better error handling.
 - Improve documentation.
-- Publish package.
 - General refactor.
+- ~~Publish package.~~ - Available @ [Nuget](https://www.nuget.org/packages/ClashRoyaleApi/)
 
 
 #### License
