@@ -100,14 +100,12 @@ foreach (Card card in cards)
 }
 ````
 
+![](./extra/example1.png);
+
+*Random deck:*
 ```csharp
-// Getting a random deck
 List<Card> randomDeck = Royale.GetRandomDeck();
 ```
-
-Explore model properties:
-
-![](./extra/example1.png);
 
 #### TODO
 - Better error handling.
