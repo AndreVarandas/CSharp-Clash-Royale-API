@@ -1,6 +1,7 @@
 ﻿# Clash Royale Api
 
 Get all info about clash royale cards, loot, leagues and player level's.
+
 This is a wrapper for the awesome NodeJS Clash Royale api made by [Martin Carrera](https://github.com/martincarrera/clash-royale-api).
 
 #### Motivation
