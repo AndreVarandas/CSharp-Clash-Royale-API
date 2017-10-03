@@ -1,4 +1,4 @@
-﻿# Clash Royale Api
+# Clash Royale Api
 
 Get all info about clash royale cards, loot, leagues and player levels.
 
