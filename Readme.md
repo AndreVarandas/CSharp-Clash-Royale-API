@@ -11,9 +11,9 @@ The need to use this library in any dotnet core application.
 
 Install using your favorite package manager:
 
-- `PM> Install-Package ClashRoyale -Version 1.0.0`
-- `$ dotnet add package ClashRoyal --version 1.0.0`
-- `$ paket add ClashRoyale --version 1.0.0`
+- `PM> Install-Package ClashRoyale -Version 1.0.1`
+- `$ dotnet add package ClashRoyale --version 1.0.1`
+- `$ paket add ClashRoyale --version 1.0.1`
 
 **Models**:
 
@@ -111,8 +111,8 @@ Explore model properties:
 
 #### TODO
 - Better error handling.
-- Improve documentation.
 - General refactor.
+- ~~Improve documentation.~~
 - ~~Publish package.~~ - Available @ [Nuget](https://www.nuget.org/packages/ClashRoyale/)
 
 

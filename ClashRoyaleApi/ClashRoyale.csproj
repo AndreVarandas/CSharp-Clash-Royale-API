@@ -14,6 +14,7 @@
     <PackageProjectUrl>https://github.com/AndreVarandas/CSharp-Clash-Royale-API</PackageProjectUrl>
     <PackageTags>Clash Royale clashroyale royale-api</PackageTags>
     <PackageReleaseNotes>Renamed package.</PackageReleaseNotes>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

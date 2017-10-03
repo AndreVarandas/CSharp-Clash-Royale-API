@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ClashRoyale
 {
-    public class ClashRoyale
+    public class Royale
     {
         #region Private fields
         /// <summary>
