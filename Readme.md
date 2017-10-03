@@ -11,9 +11,9 @@ The need to use this library in any dotnet core application.
 
 Install using your favorite package manager:
 
-- `PM> Install-Package ClashRoyaleApi -Version 1.0.0`
-- `$ dotnet add package ClashRoyaleApi --version 1.0.0`
-- `$ paket add ClashRoyaleApi --version 1.0.0`
+- `PM> Install-Package ClashRoyale -Version 1.0.0`
+- `$ dotnet add package ClashRoyal --version 1.0.0`
+- `$ paket add ClashRoyale --version 1.0.0`
 
 **Models**:
 
@@ -27,65 +27,65 @@ Install using your favorite package manager:
 
 *Requirements*
 ```csharp
-using ClashRoyaleApi;
-using ClashRoyaleApi.Models;
+using ClashRoyale;
+using ClashRoyale.Models;
 ```
 
 *Cards:*
 ```csharp
 // Returns all cards
-List<Card> cards = RoyaleAPI.GetCards();
+List<Card> cards = Royale.GetCards();
 
 // Returns a single card - Id name or id
-Card card = RoyaleAPI.GetCard("fireball");
+Card card = Royale.GetCard("fireball");
 
 // Returns the card image url
-string imageUrl = RoyaleAPI.GetCardImageURL(idName);
+string imageUrl = Royale.GetCardImageURL(idName);
 ```
 
 *Arenas:*
 ```csharp
 // Returns all arenas
-List<Arena> arenas = RoyaleAPI.GetArenas();
+List<Arena> arenas = Royale.GetArenas();
 
 // Returns a single arena - id or idname
-Arena arena = RoyaleAPI.GetArena(id);
+Arena arena = Royale.GetArena(id);
 
 // Returns the arena image url
-string arena url = RoyaleAPI.GetArenaImageURL(idName);
+string arena url = Royale.GetArenaImageURL(idName);
 ```
 
 *Chests:*
 ```csharp
 // Returns all chests
-List<Chest> chests = RoyaleAPI.GetChests();
+List<Chest> chests = Royale.GetChests();
 
 // Returns a single chest
-Chest chest = RoyaleAPI.GetChest(id);
+Chest chest = Royale.GetChest(id);
 
 // Returns the chest image url
-string chestImageUrl = RoyaleAPI.GetChestURL(idName);
+string chestImageUrl = Royale.GetChestURL(idName);
 ```
 
 *Leagues:*
 ```csharp
 // Returns all leagues
-List<League> leagues = RoyaleAPI.GetLeagues();
+List<League> leagues = Royale.GetLeagues();
 
 // Returns a single league
-League league = RoyaleAPI.GetLeague(id);
+League league = Royale.GetLeague(id);
 
 // Returns the league image
-string leagueImageUrl = RoyaleAPI.GetLeagueImageURL(idName);
+string leagueImageUrl = Royale.GetLeagueImageURL(idName);
 ```
 
 *Player info:*
 ```csharp
 // Returns all info about players
-List<Players> players = RoyaleAPI.GetPlayers();
+List<Players> players = Royale.GetPlayers();
 
 // Returns info about a single player level
-Player player = RoyaleAPI.GetPlayer(id);
+Player player = Royale.GetPlayer(id);
 ```
 
 
@@ -93,7 +93,7 @@ Player player = RoyaleAPI.GetPlayer(id);
 
 ```csharp
 // Getting all the cards
-List<Card> cards = RoyaleAPI.GetCards();
+List<Card> cards = Royale.GetCards();
 foreach (Card card in cards)
 {
     Console.WriteLine(card.Name);
@@ -102,7 +102,7 @@ foreach (Card card in cards)
 
 ```csharp
 // Getting a random deck
-List<Card> randomDeck = RoyaleAPI.GetRandomDeck();
+List<Card> randomDeck = Royale.GetRandomDeck();
 ```
 
 Explore model properties:
@@ -113,7 +113,7 @@ Explore model properties:
 - Better error handling.
 - Improve documentation.
 - General refactor.
-- ~~Publish package.~~ - Available @ [Nuget](https://www.nuget.org/packages/ClashRoyaleApi/)
+- ~~Publish package.~~ - Available @ [Nuget](https://www.nuget.org/packages/ClashRoyale/)
 
 
 #### License
