@@ -1,20 +1,18 @@
 ﻿# Clash Royale Api
 
-This is a simple wrapper for the awesome NodeJS Clash Royale api made by [Martin Carrera](https://github.com/martincarrera/clash-royale-api).
+Get all info about clash royale cards, loot, leagues and player level's.
+This is a wrapper for the awesome NodeJS Clash Royale api made by [Martin Carrera](https://github.com/martincarrera/clash-royale-api).
 
 #### Motivation
 The need to use this library in any dotnet core application.
 
 #### Usage
 
-Install with one:
+Install using your favorite package manager:
 
-- *Package Manager*:
-  - `PM> Install-Package ClashRoyaleApi -Version 1.0.0`
-- *.NET Cli*: 
-  - `$ dotnet add package ClashRoyaleApi --version 1.0.0`
-- *Packet CLI*: 
-  - `$ paket add ClashRoyaleApi --version 1.0.0`
+- `PM> Install-Package ClashRoyaleApi -Version 1.0.0`
+- `$ dotnet add package ClashRoyaleApi --version 1.0.0`
+- `$ paket add ClashRoyaleApi --version 1.0.0`
 
 **Available models**:
 
