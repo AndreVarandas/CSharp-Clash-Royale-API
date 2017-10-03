@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ClashRoyaleApi.Models
+namespace ClashRoyale.Models
 {
     public class League
     {

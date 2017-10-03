@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Copyright>MIT</Copyright>
+    <PackageId>ClashRoyale</PackageId>
+    <Authors>André Varandas</Authors>
+    <Company>Varandas</Company>
+    <Description>Gets all info about clash royale cards, loot, leagues and player levels.</Description>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/AndreVarandas/CSharp-Clash-Royale-API/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageIconUrl>https://d32b8ciqbrecdn.cloudfront.net/G2G/supercell/Clash_Royal_Boosting_Icon_Grand_Challenge.png?1489485848</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/AndreVarandas/CSharp-Clash-Royale-API</PackageProjectUrl>
+    <PackageTags>Clash Royale clashroyale royale-api</PackageTags>
+    <PackageReleaseNotes>Renamed package.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Operations\" />
+  </ItemGroup>
+
+</Project>

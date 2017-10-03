@@ -1,12 +1,10 @@
-﻿using ClashRoyaleApi.Models;
+﻿using ClashRoyale.Models;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 
-namespace ClashRoyaleApi
+namespace ClashRoyale
 {
-    public class RoyaleAPI
+    public class ClashRoyale
     {
         #region Private fields
         /// <summary>

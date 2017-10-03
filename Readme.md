@@ -1,4 +1,4 @@
-# Clash Royale Api
+# Clash Royale
 
 Get all info about clash royale cards, loot, leagues and player levels.
 
@@ -120,4 +120,4 @@ Explore model properties:
 [MIT - André Varandas](LICENSE.txt)
 
 #### Important Notice
-This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see Supercell's Fan Content Policy: [www.supercell.com/fan-content-policy](www.supercell.com/fan-content-policy).
+This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see Supercell's Fan Content Policy: [www.supercell.com/fan-content-policy](http://www.supercell.com/fan-content-policy).
