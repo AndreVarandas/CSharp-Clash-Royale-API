@@ -1,6 +1,6 @@
 ﻿# Clash Royale Api
 
-Get all info about clash royale cards, loot, leagues and player level's.
+Get all info about clash royale cards, loot, leagues and player levels.
 
 This is a wrapper for the awesome NodeJS Clash Royale api made by [Martin Carrera](https://github.com/martincarrera/clash-royale-api).
 
@@ -15,7 +15,7 @@ Install using your favorite package manager:
 - `$ dotnet add package ClashRoyaleApi --version 1.0.0`
 - `$ paket add ClashRoyaleApi --version 1.0.0`
 
-**Available models**:
+**Models**:
 
 `Arena`
 `Card`
@@ -25,67 +25,89 @@ Install using your favorite package manager:
 
 **Available methods:**
 
+*Requirements*
 ```csharp
-// Required namespace
-using ClashRoyaleApi
+using ClashRoyaleApi;
+using ClashRoyaleApi.Models;
+```
 
+*Cards:*
+```csharp
 // Returns all cards
-RoyaleAPI.GetCards();
+List<Card> cards = RoyaleAPI.GetCards();
 
-// Returns a single card
-RoyaleAPI.GetCard(id); 
+// Returns a single card - Id name or id
+Card card = RoyaleAPI.GetCard("fireball");
 
 // Returns the card image url
-RoyaleAPI.GetCardImageURL(idName) ;
+string imageUrl = RoyaleAPI.GetCardImageURL(idName);
+```
 
+*Arenas:*
+```csharp
 // Returns all arenas
-RoyaleAPI.GetArenas();
+List<Arena> arenas = RoyaleAPI.GetArenas();
 
-// Returns a single arena
-RoyaleAPI.GetArena(id); 
+// Returns a single arena - id or idname
+Arena arena = RoyaleAPI.GetArena(id);
 
 // Returns the arena image url
-RoyaleAPI.GetArenaImageURL(idName);
+string arena url = RoyaleAPI.GetArenaImageURL(idName);
+```
 
+*Chests:*
+```csharp
 // Returns all chests
-RoyaleAPI.GetChests();
+List<Chest> chests = RoyaleAPI.GetChests();
 
 // Returns a single chest
-RoyaleAPI.GetChest(id);
+Chest chest = RoyaleAPI.GetChest(id);
 
 // Returns the chest image url
-RoyaleAPI.GetChestURL(idName);
+string chestImageUrl = RoyaleAPI.GetChestURL(idName);
+```
 
+*Leagues:*
+```csharp
 // Returns all leagues
-RoyaleAPI.GetLeagues();
+List<League> leagues = RoyaleAPI.GetLeagues();
 
 // Returns a single league
-RoyaleAPI.GetLeague(id);
+League league = RoyaleAPI.GetLeague(id);
 
 // Returns the league image
-RoyaleAPI.GetLeagueImageURL(idName);
+string leagueImageUrl = RoyaleAPI.GetLeagueImageURL(idName);
+```
 
+*Player info:*
+```csharp
 // Returns all info about players
-RoyaleAPI.GetPlayers();
+List<Players> players = RoyaleAPI.GetPlayers();
 
 // Returns info about a single player level
-RoyaleAPI.GetPlayer(id);
+Player player = RoyaleAPI.GetPlayer(id);
+```
 
-// Returns a random deck
-RoyaleAPI.GetRandomDeck();
 
-// EXAMPLES
+*And more examples:*
 
+```csharp
 // Getting all the cards
 List<Card> cards = RoyaleAPI.GetCards();
 foreach (Card card in cards)
 {
     Console.WriteLine(card.Name);
 }
+````
 
+```csharp
 // Getting a random deck
 List<Card> randomDeck = RoyaleAPI.GetRandomDeck();
 ```
+
+Explore model properties:
+
+![](./extra/example1.png);
 
 #### TODO
 - Better error handling.
