@@ -11,7 +11,7 @@ namespace ClashRoyale
         /// Defines endpoints
         /// </summary>
         private static readonly string _BASE_URL = "http://www.clashapi.xyz/api";
-        private static readonly string _IMAGES = "http://www.clashapi.xyz/api/images";
+        private static readonly string _IMAGES = "http://www.clashapi.xyz/images";
         private static readonly string _ARENAS = _BASE_URL + "/arenas/";
         private static readonly string _ARENA_IMAGE = _IMAGES + "/arenas/";
         private static readonly string _CARDS = _BASE_URL + "/cards/";
@@ -51,11 +51,11 @@ namespace ClashRoyale
         /// <summary>
         /// Returns the url of the card image
         /// </summary>
-        /// <param name="IdName">Card name</param>
+        /// <param name="IdName">Card Id Name</param>
         /// <returns>string</returns>
         public static string GetCardImageURL(string idName)
         {
-            return _CARD_IMAGE + idName;
+            return _CARD_IMAGE + idName + ".png";
         }
         #endregion
 

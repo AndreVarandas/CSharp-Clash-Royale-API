@@ -1,8 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Copyright>MIT</Copyright>
     <PackageId>ClashRoyale</PackageId>
@@ -15,8 +14,13 @@
     <PackageTags>Clash Royale clashroyale royale-api</PackageTags>
     <PackageReleaseNotes>Renamed package.</PackageReleaseNotes>
     <Version>1.0.1</Version>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>1.0.2</PackageVersion>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
